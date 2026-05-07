@@ -26,6 +26,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddAutoMapper(typeof(MainProfile));
 
 builder.Services.AddTransient<ISubjectService, SubjectService>();
+builder.Services.AddTransient<IStudentService, StudentService>();
+builder.Services.AddTransient<ITeacherService, TeacherService>();
+builder.Services.AddTransient<IGroupService, GroupService>();
+builder.Services.AddTransient<IGradeService, GradeService>();
 
 var app = builder.Build();
 

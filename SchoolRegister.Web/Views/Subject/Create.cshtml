@@ -1,0 +1,41 @@
+@model SchoolRegister.ViewModels.VM.AddOrUpdateSubjectVm
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <h1 class="mb-4">Add Subject</h1>
+
+        <form asp-action="Create">
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <input asp-for="Description" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="TeacherId" class="form-label">
+                    Teacher
+                </label>
+
+                <input asp-for="TeacherId" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Add
+            </button>
+
+        </form>
+
+        <br />
+
+        <a asp-action="Index">Back to List</a>
+
+    </div>
+
+</div>

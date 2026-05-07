@@ -227,7 +227,7 @@ namespace SchoolRegister.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TeacherId")
+                    b.Property<int?>("TeacherId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -275,11 +275,9 @@ namespace SchoolRegister.DAL.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -349,7 +347,7 @@ namespace SchoolRegister.DAL.Migrations
                 {
                     b.HasBaseType("SchoolRegister.Model.DataModels.User");
 
-                    b.Property<int>("GroupId")
+                    b.Property<int?>("GroupId")
                         .HasColumnType("int");
 
                     b.Property<int>("ParentId")
@@ -443,9 +441,7 @@ namespace SchoolRegister.DAL.Migrations
                 {
                     b.HasOne("SchoolRegister.Model.DataModels.Teacher", "Teacher")
                         .WithMany("Subjects")
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TeacherId");
 
                     b.Navigation("Teacher");
                 });
@@ -473,9 +469,7 @@ namespace SchoolRegister.DAL.Migrations
                 {
                     b.HasOne("SchoolRegister.Model.DataModels.Group", "Group")
                         .WithMany("Students")
-                        .HasForeignKey("GroupId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GroupId");
 
                     b.HasOne("SchoolRegister.Model.DataModels.Parent", "Parent")
                         .WithMany("Students")

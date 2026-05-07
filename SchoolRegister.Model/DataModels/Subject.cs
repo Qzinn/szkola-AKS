@@ -12,7 +12,7 @@ public class Subject
 
     public virtual Teacher Teacher { get; set; } = null!;
 
-    public int TeacherId { get; set; }
+    public int? TeacherId { get; set; }
 
     public virtual List<Grade> Grades { get; set; } = new();
 }

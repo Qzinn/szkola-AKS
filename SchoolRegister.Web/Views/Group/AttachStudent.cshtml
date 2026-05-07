@@ -1,0 +1,21 @@
+@model SchoolRegister.ViewModels.VM.AttachDetachStudentToGroupVm
+
+<h1>Attach Student To Group</h1>
+
+<form asp-action="AttachStudent">
+
+    <div class="mb-3">
+        <label asp-for="StudentId"></label>
+        <input asp-for="StudentId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="GroupId"></label>
+        <input asp-for="GroupId" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>

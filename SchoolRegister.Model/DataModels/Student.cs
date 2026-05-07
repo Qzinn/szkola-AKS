@@ -6,7 +6,7 @@ public class Student : User
 {
     public virtual Group Group { get; set; } = null!;
 
-    public int GroupId { get; set; }
+    public int? GroupId { get; set; }
 
     public virtual List<Grade> Grades { get; set; } = new();
 

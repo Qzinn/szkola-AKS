@@ -1,0 +1,17 @@
+@model SchoolRegister.ViewModels.VM.AddOrUpdateGroupVm
+
+<h1>Create Group</h1>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>

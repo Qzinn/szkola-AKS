@@ -1,0 +1,26 @@
+@model IEnumerable<SchoolRegister.ViewModels.VM.GroupVm>
+
+<h1>Groups</h1>
+
+<a asp-action="Create" class="btn btn-primary mb-3">
+    Add Group
+</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,84 @@
+﻿@page
+@model RegisterModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <form id="registerForm" method="post">
+
+            <h2>Register New Users</h2>
+
+            <hr />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" />
+                <label asp-for="Input.Email"></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" class="form-control" />
+                <label asp-for="Input.Password"></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.ConfirmPassword" class="form-control" />
+                <label asp-for="Input.ConfirmPassword"></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.FirstName" class="form-control" />
+                <label asp-for="Input.FirstName"></label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input asp-for="Input.LastName" class="form-control" />
+                <label asp-for="Input.LastName"></label>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.Role"></label>
+
+                <select asp-for="Input.Role"
+                        asp-items="Model.Roles"
+                        class="form-control">
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.GroupId"></label>
+
+                <select asp-for="Input.GroupId"
+                        asp-items="Model.Groups"
+                        class="form-control">
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.ParentId"></label>
+
+                <select asp-for="Input.ParentId"
+                        asp-items="Model.Parents"
+                        class="form-control">
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Register
+            </button>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

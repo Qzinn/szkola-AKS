@@ -1,0 +1,31 @@
+@model SchoolRegister.ViewModels.VM.AddGradeToStudentVm
+
+<h1>Add Grade</h1>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label asp-for="StudentId"></label>
+        <input asp-for="StudentId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TeacherId"></label>
+        <input asp-for="TeacherId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SubjectId"></label>
+        <input asp-for="SubjectId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="GradeValue"></label>
+        <input asp-for="GradeValue" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>

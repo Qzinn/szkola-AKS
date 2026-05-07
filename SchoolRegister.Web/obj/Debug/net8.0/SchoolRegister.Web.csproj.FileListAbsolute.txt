@@ -161,3 +161,4 @@ C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.Web\obj\Debug\net8.0\Sc
 C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.Web\obj\Debug\net8.0\ref\SchoolRegister.Web.dll
 C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.Web\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.Web\bin\Debug\net8.0\AutoMapper.dll

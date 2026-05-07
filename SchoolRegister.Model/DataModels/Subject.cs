@@ -8,11 +8,11 @@ public class Subject
 
     public string Description { get; set; } = null!;
 
-    public List<SubjectGroup> SubjectGroups { get; set; } = new();
+    public virtual List<SubjectGroup> SubjectGroups { get; set; } = new();
 
-    public Teacher Teacher { get; set; } = null!;
+    public virtual Teacher Teacher { get; set; } = null!;
 
     public int TeacherId { get; set; }
 
-    public List<Grade> Grades { get; set; } = new();
+    public virtual List<Grade> Grades { get; set; } = new();
 }

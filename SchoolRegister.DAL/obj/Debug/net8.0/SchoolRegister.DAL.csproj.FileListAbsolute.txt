@@ -14,3 +14,5 @@ C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.DAL\obj\Debug\net8.0\Sc
 C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.DAL\obj\Debug\net8.0\refint\SchoolRegister.DAL.dll
 C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.DAL\obj\Debug\net8.0\SchoolRegister.DAL.pdb
 C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.DAL\obj\Debug\net8.0\ref\SchoolRegister.DAL.dll
+C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.DAL\bin\Debug\net8.0\SchoolRegister.DAL.runtimeconfig.json
+C:\Users\Wiktor\Wiktor Krasoń\szkola-AKS\SchoolRegister.DAL\obj\Debug\net8.0\SchoolRegister.DAL.genruntimeconfig.cache

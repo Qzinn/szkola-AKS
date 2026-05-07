@@ -6,7 +6,7 @@ public class Group
 
     public string Name { get; set; } = null!;
 
-    public List<Student> Students { get; set; } = new();
+    public virtual List<Student> Students { get; set; } = new();
 
-    public List<SubjectGroup> SubjectGroups { get; set; } = new();
+    public virtual List<SubjectGroup> SubjectGroups { get; set; } = new();
 }

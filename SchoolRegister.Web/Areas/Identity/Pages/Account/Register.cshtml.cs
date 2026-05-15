@@ -166,8 +166,7 @@ namespace SchoolRegister.Web.Areas.Identity.Pages.Account
                         LastName = Input.LastName,
                         Email = Input.Email,
                         UserName = Input.Email,
-                        GroupId = Input.GroupId ?? 0,
-                        ParentId = Input.ParentId ?? 0
+                        GroupId = Input.GroupId
                     };
                 }
                 else if (Input.Role == "Parent")

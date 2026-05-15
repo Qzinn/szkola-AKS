@@ -87,4 +87,27 @@ public class SubjectService : BaseService, ISubjectService
             throw;
         }
     }
+
+    public bool RemoveSubject(Func<Subject, bool> predicate)
+    {
+        try
+        {
+            var subject = DbContext.Subjects
+                .FirstOrDefault(predicate);
+
+            if (subject == null)
+                throw new ArgumentNullException();
+
+            DbContext.Subjects.Remove(subject);
+
+            DbContext.SaveChanges();
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, ex.Message);
+            throw;
+        }
+    }
 }

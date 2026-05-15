@@ -104,4 +104,22 @@ public class GradeService : BaseService, IGradeService
             throw;
         }
     }
+
+    public IEnumerable<GradeVm> GetGrades()
+    {
+        try
+        {
+            var grades = DbContext.Grades.ToList();
+
+            var gradesVm =
+                Mapper.Map<IEnumerable<GradeVm>>(grades);
+
+            return gradesVm;
+        }
+        catch (Exception ex)
+        {
+            Logger.LogError(ex, ex.Message);
+            throw;
+        }
+    }
 }

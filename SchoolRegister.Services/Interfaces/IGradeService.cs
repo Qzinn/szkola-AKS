@@ -9,4 +9,6 @@ public interface IGradeService
 
     GradesReportVm GetGradesReportForStudent(
         GetGradesReportVm getGradesReportVm);
+
+    IEnumerable<GradeVm> GetGrades();
 }

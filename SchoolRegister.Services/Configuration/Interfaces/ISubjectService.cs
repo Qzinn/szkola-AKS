@@ -12,4 +12,6 @@ public interface ISubjectService
 
     IEnumerable<SubjectVm> GetSubjects(
         Expression<Func<Subject, bool>> filterExpression = null!);
+
+    bool RemoveSubject(Func<Subject, bool> predicate);
 }
